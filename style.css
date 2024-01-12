@@ -5,18 +5,23 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #fdbf00;
+  background-image: url('background.jpg');
+background-position: center;
+
+background-size: cover;
+background-color: #e2e2e2;
+back
 }
 .card {
    box-shadow: 3px 0px 0px #FBF6EE ;
 text-shadow: 1px 1px 2px #FF9843;
   width: 640px;
   height: 400px;
-  position: absolute;
+  position: fixed;
   margin: auto;
   left: 0;
   right: 0;
-  top: 0;
+  top: 50%;
   bottom: 0;
   -webkit-perspective: 1200px;
   perspective: 1200px;
@@ -70,65 +75,6 @@ text-shadow: 1px 1px 2px #FF9843;
 .back {
   transform: rotateY(180deg);
   background: linear-gradient(to left, #FBF6EE, #FBF6EE 30%);
-}
-.cake {
-  width: 100%;
-  position: absolute;
-  bottom: 30px;
-}
-.top-layer,
-.middle-layer,
-.bottom-layer {
-  height: 80px;
-  width: 240px;
-  background-repeat: repeat;
-  background-size: 60px 100px;
-  background-position: 28px 0;
-  background-image: linear-gradient(
-      transparent 50px,
-      #fedbab 50px,
-      #fedbab 60px,
-      transparent 60px
-    ),
-    radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
-  border-radius: 10px 10px 0 0;
-  position: relative;
-  margin: auto;
-}
-.middle-layer {
-  transform: scale(0.85);
-  top: 6px;
-}
-.top-layer {
-  transform: scale(0.7);
-  top: 26px;
-}
-.candle {
-  height: 45px;
-  width: 15px;
-  background: repeating-linear-gradient(
-    45deg,
-    #fd3018 0,
-    #fd3018 5px,
-    #ffa89e 5px,
-    #ffa89e 10px
-  );
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 202px;
-}
-.candle:before {
-  content: "";
-  position: absolute;
-  height: 16px;
-  width: 16px;
-  background-color: #ffa500;
-  border-radius: 0 50% 50% 50%;
-  bottom: 48px;
-  transform: rotate(45deg);
-  left: -1px;
 }
 .outside p {
   font-size: 23px;
